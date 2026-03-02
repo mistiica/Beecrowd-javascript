@@ -1,6 +1,9 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
-const soma = (a, b) => a + b;
- 
- const resultado = lines.map(Number).reduce(soma);
- 
- console.log (`SOMA = ${resultado}`);
+let A = parseInt(lines[0]);
+let B = parseInt(lines[1]);
+
+let soma = A + B;
+
+console.log("SOMA = " + soma);
