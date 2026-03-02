@@ -1,6 +1,9 @@
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 
-A = parseInt(lines.shift());
-B = parseInt(lines.shift());
-console.log(`X = ${A + B}`);
+let a = parseInt(lines[0]);
+let b = parseInt(lines[1]);
+
+let soma = a + b;
+
+console.log("X = " + soma);
